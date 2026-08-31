@@ -1,0 +1,24 @@
+The Cronulla Dentists — offline design preview
+=============================================
+
+Open _all-pages.html for a clickable list of all 28 pages, or index.html to
+start at the home page. Every page links to every other page, images and
+fonts load from disk, and the countdown, hero slider, mobile menu and
+accordions all work. No server needed.
+
+This folder is FOR LOOKING AT ONLY. Do not upload it — the links point at
+"index.html" files, which is wrong for a live site. Upload static-site/
+instead (clean URLs, plus the two form functions).
+
+Where to edit what:
+  Copy/wording ....... content/source/website-copy.md, then re-run
+                       node scripts/ingest-copy.mjs
+  Colours, spacing,
+  fonts, components ... app/globals.css
+  Phone, email, hours,
+  opening date, flags . site.config.ts
+  Page layout/order ... app/page.tsx (home), components/ServiceTemplate.tsx
+                       (all service pages), app/services, app/contact,
+                       components/ProseTemplate.tsx (about, parking, privacy)
+
+After any change: npm run build:static && npm run preview:offline

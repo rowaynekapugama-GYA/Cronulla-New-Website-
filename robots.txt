@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.thecronulladentists.com.au
+Sitemap: https://www.thecronulladentists.com.au/sitemap.xml
